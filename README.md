@@ -1,46 +1,96 @@
-# Getting Started with Create React App
+# ✅ WomanUP Test Task - Simple Todo Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9.3-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-9.14.0-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![React Router](https://img.shields.io/badge/React_Router-6.4.3-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-In the project directory, you can run:
+**A simple Todo application with Firebase integration and real-time updates**
 
-### `npm start`
+*Test task for WomanUP company - A straightforward todo list application demonstrating React, TypeScript, and Firebase integration*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[Features](#-features) • [Tech Stack](#-tech-stack) • [Project Structure](#-project-structure) • [Key Features](#-key-features)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+</div>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📖 About
 
-### `npm run build`
+**WomanUP Todo List** is a simple todo application built as a **test task for WomanUP company**. The application provides a straightforward CRUD (Create, Read, Update, Delete) interface for managing todos with real-time synchronization using Firebase Firestore.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project was developed as part of the recruitment process for WomanUP, demonstrating basic React development skills, TypeScript implementation, and Firebase integration. It features a simple user interface with visual indicators for task status, deadline tracking, and file attachments.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Tech Stack
 
-### `npm run eject`
+### Core Technologies
+<div align="center">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Category | Technology | Version |
+|----------|-----------|---------|
+| **Library** | ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react&logoColor=black) | 18.2.0 |
+| **Language** | ![TypeScript](https://img.shields.io/badge/TypeScript-4.9.3-3178C6?logo=typescript&logoColor=white) | 4.9.3 |
+| **Backend** | ![Firebase](https://img.shields.io/badge/Firebase-9.14.0-FFCA28?logo=firebase&logoColor=black) | 9.14.0 |
+| **Routing** | ![React Router](https://img.shields.io/badge/React_Router-6.4.3-CA4245?logo=react-router&logoColor=white) | 6.4.3 |
+| **Styling** | ![SASS](https://img.shields.io/badge/SASS-1.56.1-CC6699?logo=sass&logoColor=white) | 1.56.1 |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Firebase Services
+<div align="center">
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+| Service | Purpose |
+|---------|---------|
+| **Firestore** | Real-time database for todos |
+| **Storage** | File upload and storage |
 
-## Learn More
+</div>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔥 Firebase Integration
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Firestore Database
+- **Collection**: `todos`
+- **Document Structure**:
+  ```typescript
+  {
+    heading: string
+    description: string
+    deadLine: string
+    url: string (file URL)
+    timestamp: serverTimestamp()
+  }
+  ```
+- **Real-time Listeners**: Automatic updates using `onSnapshot`
+- **CRUD Operations**: Create, Read, Update, Delete
+
+### Firebase Storage
+- **File Upload**: Secure file storage
+- **Download URLs**: Generated URLs for file access
+- **File Management**: Upload and replace files
+
+---
+
+## 👨‍💻 Development Notes
+
+This project was developed as a **test task for WomanUP company** - a simple todo application demonstrating:
+
+- Basic React development with hooks
+- TypeScript implementation and type safety
+- Firebase integration (Firestore and Storage)
+- Real-time data synchronization
+- File upload and management
+- Date handling and validation
+- Simple UI design
+- Clean component architecture
+
+The application showcases basic proficiency in:
+- React Router for navigation
+- Firebase SDK v9+ modular API
+- Real-time listeners
+- Form handling and validation
+- State management
+- Error handling
