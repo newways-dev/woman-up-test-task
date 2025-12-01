@@ -11,8 +11,6 @@
 
 *Test task for WomanUP company - A straightforward todo list application demonstrating React, TypeScript, and Firebase integration*
 
-[Features](#-features) • [Tech Stack](#-tech-stack) • [Project Structure](#-project-structure) • [Key Features](#-key-features)
-
 </div>
 
 ---
